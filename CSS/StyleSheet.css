@@ -1,0 +1,222 @@
+*{  
+    margin: 0 ;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Brutal;
+    src: url("../font/Brutalworld-owxEa.ttf")}
+html,body{
+    overflow-x:hidden;
+    background-color:rgba(38,34,38,
+    0.5);
+    font-family:sans-serif, Arial, Helvetica;
+    font-size: 16px;}
+    
+.container{
+font-size: 16px;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 50px 1fr 1fr 150px}
+
+/*--Menu de navegação--*/
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color:#0D0D0D;
+    word-spacing: 50px;}
+.header a{ 
+        display: inline-block;
+        padding: 10px;
+        color:white;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 500;}
+        
+.header ul li{
+
+    display: inline-table;
+    position: relative;
+    background-color: rgba(13,13,13);
+}
+.header ul li:hover{
+    background-color: rgba(13,13,13, 0.5);}
+/*--submenu--*/
+.header ul ul{
+display: none;
+position: absolute;
+}
+.header ul li:hover ul{
+    display: block;
+    position:fixed;
+    }
+.header ul ul li{
+        display: block;
+        position: relative;}
+/*--submenu final--*/
+/*--Search bar --*/     
+.bar{
+    float: right;
+    margin: 10px 50px;
+    background-color: white;
+    color: rgba(13,13,13);
+border-radius: 50px;}
+.fas{
+    color: white;
+    padding: 10px;
+    float: right;
+    padding: 17px 10px 5px 0px;}
+    /* Secção do menu capaz de ser demasiado redundante */
+
+/*--Search bar --*/        
+h1{
+    
+    font-family: Brutal;
+            text-align: center;
+        font-size: 50px;}
+
+
+.Lore{
+    margin-top: 5px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    background-color: #361F29;
+    color: white;
+    padding: 20px 20px;
+    }
+.Main{
+    text-indent: 10px;
+    text-align: justify;
+    line-height: 20px;
+    margin: 25px 100px 20px;
+}
+
+
+img{max-width: 150px;
+    min-width: 20px;
+border-color:rgba(38,34,38,
+0.5);;
+border-style: solid;}
+
+.Discography{
+    position: relative;
+    display: flex;
+    grid-row-start: 3;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: rgba(191, 80, 90, 0.6);
+   border-radius: 600px;
+padding: 50px;}
+
+.second{
+    margin: 25px 25px;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+.album{
+        text-align: center;
+        width: 50%;
+        padding: 10px;
+        color: #FAF9F6;
+       line-height: 1.5;}
+.album::after {
+        content: "";
+        clear: both;
+        display: table;}
+
+/*--Media video--*/
+.youtube{
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 10px 10px 10px 10px;
+        grid-column-start: 3;
+        font-family: Brutal;
+        color: #FAF9F6;
+        background-color: #1E1D23;
+        text-align: center;}
+.youtube h2{
+    margin: 50px 10px;
+    font-family: Brutal;
+}
+
+iframe{border-radius: 10px;
+width: 500px;
+height: 300px;}
+#twitch-embed{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: 100px 100px;
+    background-image: url(../images/twitchdivbackgroundblurr.png);
+    background-size:cover;
+    background-position: center;
+}
+/*--Media video--*/
+
+.footer{
+    color: #FAF9F6;
+
+    grid-column: 1 / 4;
+    grid-row: 4 /4;
+    background-color: #0D0D0D;}
+    .footer form{float: right;}
+    i {
+        margin-right: 10px;
+      }
+    .footer h3{
+        text-align: center;
+        margin: 20px;
+    }
+    .footer ul{
+            list-style-type: none;
+            padding-left: 25%;}
+
+.Formulario{
+    grid-column-start: 3;
+    grid-row: 4;}
+.Formulario h3{
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;}
+.Formulario{
+    padding: 30px 30px 30px;}
+input{
+    padding: 5px 5px;
+}
+.mensagem{
+    width: 57.9%;
+    
+}
+button{
+margin: 10px;
+padding: 10px 10px;
+width: 100px;
+color: white;
+background-color: #361F29;}
+/*--Media icons links--*/
+.footerv2{
+
+    grid-column: 1/  4;
+    grid-row: 5 /5;
+    background-color: #0D0D0D;
+    text-align: center;}
+.footerv2 a:visited { 
+    text-decoration: none; 
+    color: white;}
+.socials{
+    display: flex;
+    position: relative;
+    left: 44.3%;
+    list-style-type: none;
+    margin: 50px;
+}
+/*--Media icons links--*/
+.footerv2 .socials li a{
+    color: white;
+}
